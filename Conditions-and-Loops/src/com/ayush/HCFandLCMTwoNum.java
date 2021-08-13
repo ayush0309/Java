@@ -2,7 +2,7 @@ package com.ayush;
 
 import java.util.Scanner;
 
-public class HCFTwoNum {
+public class HCFandLCMTwoNum {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int num1, num2, hcf = 0;
@@ -16,6 +16,9 @@ public class HCFTwoNum {
             }
         }
 
+        int lcm = (num1 * num2) / hcf;
+
         System.out.println("HCF of " + num1 + " and " + num2 + " is: " + hcf);
+        System.out.println("LCM of " + num1 + " and " + num2 + " is: " + lcm);
     }
 }
